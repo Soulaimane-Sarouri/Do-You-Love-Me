@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  body, html{
+    background-color: #f58282;
+    height: 100%;
+  
+  }
+  .page{
+    width: 50%; 
+    margin: auto; 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .heart {
+      margin-top:  10%;
+      margin-left: 50%;
+      position: relative;
+      display: inline-block;
+      transition: all 1s;
+      text-align: center;
+  }
+  .text{
+      padding-top: 15px;
+      font-size: 50px;
+      text-align: center;
+      padding-bottom: 20%;
+  }
+  .text> .doyou{
+    font-family: Tangerine;
+  }
+  .btn1{
+    padding-top: 50%;
+    text-align: center;
+  }
+  .btn1> .button1{
+    background-color: #B43757;
+    color: black;
+    padding: 10px;
+    border-radius: 25%;
+  }
+  .btn1> .button2{
+    background-color: #B43757;
+    color: black;
+    padding: 10px;
+    border-radius: 25%;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  .heart>.bottom {
+      width: 50px;
+      height: 50px;
+      border: 1px solid red;
+      transform: rotate(45deg);
+      background-color: red;
+  }
+  .heart>.left {
+      width: 50px;
+      height: 50px;
+      border: 1px solid red;
+      position: absolute;
+      bottom:100% ;
+      right: 100%;
+      border-radius:50% 0 0 50%;
+      transform: rotate(45deg) translateX(31px);
+      background-color: red;
+  }
+  .heart>.right {
+      width: 50px;
+      height: 50px;
+      border: 1px solid red;
+      transform: rotate(45deg);
+      position: absolute;
+      border-radius:50% 50% 0 0;
+      bottom:100% ;
+      left: 100%;
+      transform: rotate(45deg) translateY(31px);
+      background-color: red;
+  }
+  @keyframes bounce {
+    0% {
+      top: 0;
+    transform: scale(1.8);
+    }
+    50% {
+      top: 20px;
+    transform: scale(2);
+    }
+    100% {
+      top: 0;
+    transform: scale(1.8);
+    }
+  }
+  .heart {
+    animation: bounce 1s infinite;
+  }
